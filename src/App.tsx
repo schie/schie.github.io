@@ -284,7 +284,7 @@ function App() {
                   </div>
                 </div>
                 <div className="space-y-3">
-                  <h3 className="text-lg font-semibold">Skills</h3>
+                  <h3 className="text-lg font-semibold">Active Skills</h3>
                   <div className="flex flex-wrap gap-2 text-sm">
                     {[
                       "API Design",
