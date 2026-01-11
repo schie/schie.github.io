@@ -1,5 +1,7 @@
 import { FaviconIcon } from "./FaviconIcon";
 
+import type { ReactNode } from "react";
+
 type OpenSourceCardProps = {
   name: string;
   description: string;
@@ -9,6 +11,7 @@ type OpenSourceCardProps = {
   primaryLabel?: string;
   links?: { label: string; href: string }[];
   tags?: string[];
+  descriptionMeta?: ReactNode;
 };
 
 export function OpenSourceCard({
@@ -20,6 +23,7 @@ export function OpenSourceCard({
   primaryLabel = "GitHub",
   links = [],
   tags = [],
+  descriptionMeta,
 }: OpenSourceCardProps) {
   return (
     <article className="card h-full border border-base-300/60 bg-base-100/80 shadow-lg backdrop-blur rounded-2xl">
@@ -37,6 +41,7 @@ export function OpenSourceCard({
         <div className="space-y-2">
           <h3 className="text-xl font-semibold">{name}</h3>
           <p className="text-sm text-base-content/70">{description}</p>
+          {descriptionMeta}
         </div>
         {tags.length > 0 ? (
           <div className="flex flex-wrap gap-2">

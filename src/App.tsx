@@ -1,6 +1,8 @@
 import { FaviconIcon } from "./components/FaviconIcon";
 import { LifeBackground } from "./components/LifeBackground";
 import { LifeBoardControls } from "./components/LifeBoardControls";
+import { GitHubAppCard } from "./components/GitHubAppCard";
+import { NpmPackageCard } from "./components/NpmPackageCard";
 import { OpenSourceCard } from "./components/OpenSourceCard";
 import { LifeBoardProvider } from "./contexts/LifeBoardContext";
 import { useTheme } from "./hooks/useTheme";
@@ -410,10 +412,11 @@ function App() {
               </p>
             </div>
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              <OpenSourceCard
+              <NpmPackageCard
                 name="react-native-device-info"
                 description="React Native device information library used across mobile apps."
                 href="https://github.com/react-native-device-info/react-native-device-info"
+                npmPackage="react-native-device-info"
                 links={[
                   {
                     label: "Docs",
@@ -426,10 +429,11 @@ function App() {
                 ]}
                 tags={["React Native", "Mobile", "Library"]}
               />
-              <OpenSourceCard
-                name="fluent-zpl"
+              <NpmPackageCard
+                name="@schie/fluent-zpl"
                 description="Fluent API for generating Zebra Programming Language labels."
                 href="https://github.com/schie/fluent-zpl"
+                npmPackage="@schie/fluent-zpl"
                 links={[
                   { label: "Docs", href: "https://fluent-zpl.schie.io" },
                   {
@@ -439,10 +443,25 @@ function App() {
                 ]}
                 tags={["ZPL", "Printing", "TypeScript"]}
               />
-              <OpenSourceCard
-                name="queue"
+              <NpmPackageCard
+                name="@schie/epc"
+                description="Type-safe EPC encoding and parsing for UHF RFID tag identifiers."
+                href="https://github.com/schie/epc"
+                npmPackage="@schie/epc"
+                links={[
+                  { label: "Docs", href: "https://epc.schie.io" },
+                  {
+                    label: "npm",
+                    href: "https://www.npmjs.com/package/@schie/epc",
+                  },
+                ]}
+                tags={["RFID", "EPC", "TypeScript"]}
+              />
+              <NpmPackageCard
+                name="@schie/queue"
                 description="Lightweight queue utilities for managing async workflows."
                 href="https://github.com/schie/queue"
+                npmPackage="@schie/queue"
                 links={[
                   { label: "Docs", href: "https://queue.schie.io/" },
                   {
@@ -452,10 +471,11 @@ function App() {
                 ]}
                 tags={["Utilities", "Async"]}
               />
-              <OpenSourceCard
+              <GitHubAppCard
                 name="medical-out-of-pocket"
                 description="Explore and understand the real costs of medical procedures."
                 href="https://github.com/schie/medical-out-of-pocket"
+                githubRepo="schie/medical-out-of-pocket"
                 links={[
                   {
                     label: "Site",
@@ -464,10 +484,11 @@ function App() {
                 ]}
                 tags={["Health", "Data Viz"]}
               />
-              <OpenSourceCard
+              <GitHubAppCard
                 name="random-barcode"
                 description="Generate randomized barcode assets for demos and prototypes."
                 href="https://github.com/schie/random-barcode"
+                githubRepo="schie/random-barcode"
                 links={[
                   {
                     label: "Site",
@@ -476,10 +497,11 @@ function App() {
                 ]}
                 tags={["Generators", "Assets"]}
               />
-              <OpenSourceCard
+              <GitHubAppCard
                 name="game-of-life"
                 description="Interactive Conway’s Game of Life experiments."
                 href="https://github.com/schie/game-of-life"
+                githubRepo="schie/game-of-life"
                 tags={["WebGL", "Experiments"]}
                 links={[
                   {
