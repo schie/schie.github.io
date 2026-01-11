@@ -497,28 +497,20 @@ function App() {
                   Magic: The Gathering
                 </span>
               </div>
-              {commanderDecks.length > 0 ? (
-                <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-                  {commanderDecks.map((deck) => (
-                    <OpenSourceCard
-                      key={deck.name}
-                      name={deck.name}
-                      description={deck.description}
-                      href={deck.href}
-                      imageSrc={deck.imageSrc}
-                      imageAlt={deck.imageAlt}
-                      primaryLabel="Decklist"
-                      tags={deck.tags}
-                    />
-                  ))}
-                </div>
-              ) : (
-                <div className="rounded-2xl border border-dashed border-base-300/70 bg-base-100/40 px-6 py-5 text-sm text-base-content/70">
-                  Add your Commander deck links in the{" "}
-                  <span className="font-semibold">commanderDecks</span> list to
-                  show them here.
-                </div>
-              )}
+              <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                {commanderDecks.map((deck) => (
+                  <OpenSourceCard
+                    key={deck.name}
+                    name={deck.name}
+                    description={deck.description}
+                    href={deck.href}
+                    imageSrc={deck.imageSrc}
+                    imageAlt={deck.imageAlt}
+                    primaryLabel="Decklist"
+                    tags={deck.tags}
+                  />
+                ))}
+              </div>
             </div>
           </section>
           <footer className="mt-auto space-y-1 pb-6 text-center text-xs text-base-content/60">
