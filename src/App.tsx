@@ -481,6 +481,12 @@ function App() {
                 description="Interactive Conway’s Game of Life experiments."
                 href="https://github.com/schie/game-of-life"
                 tags={["WebGL", "Experiments"]}
+                links={[
+                  {
+                    label: "Site",
+                    href: "https://dustin.schie.io/game-of-life/",
+                  },
+                ]}
               />
             </div>
           </section>
