@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/schie/schie.github.io/compare/v1.4.0...v1.5.0) (2026-01-11)
+
+
+### Features
+
+* adding `descriptionMeta` prop, and two Sub Components, new package ([80550ab](https://github.com/schie/schie.github.io/commit/80550ab25c85dbc4639a481607bfb476ede351af))
+
 ## [1.4.0](https://github.com/schie/schie.github.io/compare/v1.3.0...v1.4.0) (2026-01-11)
 
 
