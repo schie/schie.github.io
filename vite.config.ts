@@ -8,5 +8,8 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   define: {
     __APP_VERSION__: JSON.stringify(process.env.npm_package_version),
+    __LAST_UPDATED__: JSON.stringify(
+      process.env.LAST_UPDATED || new Date().toISOString()
+    ),
   },
 });
