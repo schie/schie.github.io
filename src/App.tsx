@@ -328,6 +328,7 @@ function App() {
                       "TypeScript",
                       "Vector Databases (Milvus)",
                       "Vite",
+                      "ZPL",
                     ].map((skill) => (
                       <span key={skill} className="badge badge-outline">
                         {skill}
