@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+:root {
+  --app-bg: radial-gradient(circle at 20% 20%, #f8fafc, #e2e8f0);
+  --text-primary: #0f172a;
+  --text-muted: #1f2937;
+  --text-subtle: #475569;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --app-bg: linear-gradient(135deg, #0b1224, #0f172a 50%, #0a0f1c 100%);
+  --text-primary: #e2e8f0;
+  --text-muted: #cbd5e1;
+  --text-subtle: #94a3b8;
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+  --app-bg: radial-gradient(circle at 20% 20%, #f8fafc, #e2e8f0);
+  --text-primary: #0f172a;
+  --text-muted: #1f2937;
+  --text-subtle: #475569;
+}
