@@ -444,7 +444,7 @@ function App() {
                 description="Lightweight queue utilities for managing async workflows."
                 href="https://github.com/schie/queue"
                 links={[
-                  { label: "Docs", href: "https://gh.schie.io/queue/" },
+                  { label: "Docs", href: "https://queue.schie.io/" },
                   {
                     label: "npm",
                     href: "https://www.npmjs.com/package/@schie/queue",
@@ -459,7 +459,7 @@ function App() {
                 links={[
                   {
                     label: "Site",
-                    href: "https://gh.schie.io/medical-out-of-pocket/",
+                    href: "https://dustin.schie.io/medical-out-of-pocket/",
                   },
                 ]}
                 tags={["Health", "Data Viz"]}
@@ -471,7 +471,7 @@ function App() {
                 links={[
                   {
                     label: "Site",
-                    href: "https://gh.schie.io/random-barcode/",
+                    href: "https://dustin.schie.io/random-barcode/",
                   },
                 ]}
                 tags={["Generators", "Assets"]}
