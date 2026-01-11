@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.0](https://github.com/schie/schie.github.io/compare/v1.1.0...v1.2.0) (2026-01-11)
+
+
+### Features
+
+* **icon:** adding custom icon ([d5b9324](https://github.com/schie/schie.github.io/commit/d5b932471ea421f7bfb3132fa0a2cc797eddca52))
+* updating skills ([98bd595](https://github.com/schie/schie.github.io/commit/98bd595fd24404320dac748bf821f1d9ed7e840a))
+
 ## [1.1.0](https://github.com/schie/schie.github.io/compare/v1.0.1...v1.1.0) (2026-01-11)
 
 
