@@ -6,9 +6,18 @@ import { LifeBoardProvider } from "./contexts/LifeBoardContext";
 import { useTheme } from "./hooks/useTheme";
 import profilePic from "./assets/profile.jpeg";
 
+const APP_VERSION = __APP_VERSION__ || "dev";
+const LAST_UPDATED_RAW = __LAST_UPDATED__ || "";
+const LAST_UPDATED = LAST_UPDATED_RAW
+  ? new Date(LAST_UPDATED_RAW).toLocaleDateString(undefined, {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    })
+  : "dev";
+
 function App() {
   useTheme();
-  const appVersion = __APP_VERSION__ || "dev";
   const commanderDecks: {
     name: string;
     description: string;
@@ -485,8 +494,21 @@ function App() {
               )}
             </div>
           </section>
-          <footer className="mt-auto pb-6 text-center text-xs text-base-content/60">
-            Version {appVersion}
+          <footer className="mt-auto space-y-1 pb-6 text-center text-xs text-base-content/60">
+            <p>
+              <a
+                className="underline decoration-transparent underline-offset-4 transition hover:decoration-current"
+                href="https://github.com/schie/schie.github.io"
+              >
+                Built with React, TypeScript, Vite, Tailwind, DaisyUI, d3, and
+                Web Workers.
+              </a>
+            </p>
+            <p>
+              Version {APP_VERSION}
+              <span className="mx-2 text-base-content/40">•</span>
+              Last updated {LAST_UPDATED}
+            </p>
           </footer>
         </main>
       </div>
