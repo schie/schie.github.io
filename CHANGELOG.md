@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/schie/schie.github.io/compare/v1.3.0...v1.4.0) (2026-01-11)
+
+
+### Features
+
+* **open-source:** adding game of life site link ([8b551a6](https://github.com/schie/schie.github.io/commit/8b551a67733e57a2af8fe1d90224c4644066bd0d))
+
 ## [1.3.0](https://github.com/schie/schie.github.io/compare/v1.2.0...v1.3.0) (2026-01-11)
 
 
