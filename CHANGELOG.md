@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.3.0](https://github.com/schie/schie.github.io/compare/v1.2.0...v1.3.0) (2026-01-11)
+
+
+### Features
+
+* **skills:** adding ZPL ([bfd7d6a](https://github.com/schie/schie.github.io/commit/bfd7d6a83b356f9a275644f65926f3a48628e0fd))
+
+
+### Bug Fixes
+
+* **open-source:** updating URLs ([cae6fca](https://github.com/schie/schie.github.io/commit/cae6fcac91048f94b59ce579c4f0de72e8cf1447))
+
 ## [1.2.0](https://github.com/schie/schie.github.io/compare/v1.1.0...v1.2.0) (2026-01-11)
 
 
