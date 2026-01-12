@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/schie/schie.github.io/compare/v1.5.0...v1.6.0) (2026-01-12)
+
+
+### Features
+
+* adding sticky headers, updating styling ([3f33b2d](https://github.com/schie/schie.github.io/commit/3f33b2d8c3f17492ee39823f95e7911a425bb347))
+
 ## [1.5.0](https://github.com/schie/schie.github.io/compare/v1.4.0...v1.5.0) (2026-01-11)
 
 
