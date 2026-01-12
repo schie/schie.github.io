@@ -54,7 +54,7 @@ export function OpenSourceCard({
         ) : null}
         <div className="card-actions mt-auto flex-wrap">
           <a
-            className="btn btn-sm btn-primary gap-2"
+            className="btn btn-sm btn-primary gap-2 rounded-xl"
             href={href}
             target="_blank"
             rel="noreferrer"
@@ -65,7 +65,7 @@ export function OpenSourceCard({
           {links.map((link) => (
             <a
               key={`${link.label}-${link.href}`}
-              className="btn btn-sm btn-outline btn-primary gap-2"
+              className="btn btn-sm btn-outline btn-primary gap-2 rounded-xl"
               href={link.href}
               target="_blank"
               rel="noreferrer"

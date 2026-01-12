@@ -1,12 +1,12 @@
-import { FaviconIcon } from "./components/FaviconIcon";
 import { LifeBackground } from "./components/LifeBackground";
 import { LifeBoardControls } from "./components/LifeBoardControls";
 import { GitHubAppCard } from "./components/GitHubAppCard";
 import { NpmPackageCard } from "./components/NpmPackageCard";
 import { OpenSourceCard } from "./components/OpenSourceCard";
+import { ProfileCard } from "./components/ProfileCard";
+import { SectionHeader } from "./components/SectionHeader";
 import { LifeBoardProvider } from "./contexts/LifeBoardContext";
 import { useTheme } from "./hooks/useTheme";
-import profilePic from "./assets/profile.jpeg";
 
 const APP_VERSION = __APP_VERSION__ || "dev";
 const LAST_UPDATED_RAW = __LAST_UPDATED__ || "";
@@ -65,74 +65,20 @@ function App() {
       >
         <LifeBackground />
         <LifeBoardControls />
-        <main className="relative z-10 flex h-full flex-col gap-8 overflow-y-auto px-6 py-10">
-          <section className="mx-auto w-full max-w-4xl">
-            <div className="card border border-base-300/60 bg-base-100/70 shadow-2xl backdrop-blur rounded-2xl">
-              <div className="card-body items-center gap-4 text-center">
-                <div className="avatar">
-                  <div className="w-32 rounded-full ring ring-primary ring-offset-4 ring-offset-base-100">
-                    <img src={profilePic} alt="Portrait of Dustin Schie" />
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  <h1 className="text-3xl font-semibold">Dustin Schie</h1>
-                  <p className="text-sm text-base-content/70">
-                    Full-stack developer focused on building reliable,
-                    team-friendly software. Currently learning vector search and
-                    Elixir.
-                  </p>
-                  <p className="text-sm text-base-content/70">
-                    I read sci-fi and fantasy, play Magic: The Gathering, and
-                    run DnD campaigns. My wife and I are parents to two
-                    beautiful, silly little girls.
-                  </p>
-                </div>
-                <div className="card-actions">
-                  <a
-                    className="btn btn-primary gap-2"
-                    href="https://bsky.app/profile/schie.io"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <FaviconIcon
-                      href="https://bsky.app/profile/schie.io"
-                      size={32}
-                    />
-                    Bluesky
-                  </a>
-                  <a
-                    className="btn btn-outline btn-primary gap-2"
-                    href="https://github.com/schie"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <FaviconIcon href="https://github.com/schie" size={32} />
-                    GitHub
-                  </a>
-                  <a
-                    className="btn btn-outline btn-primary gap-2"
-                    href="https://www.linkedin.com/in/dustin-schie-9431945b"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <FaviconIcon
-                      href="https://www.linkedin.com/in/dustin-schie-9431945b"
-                      size={32}
-                    />
-                    LinkedIn
-                  </a>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section className="mx-auto w-full max-w-5xl space-y-6">
-            <div className="text-center">
-              <h2 className="text-2xl font-semibold">Resumé</h2>
-              <p className="text-sm text-base-content/70">
-                Full-stack leadership, compliance-driven systems, and
-                automation.
-              </p>
-            </div>
+        <main
+          className="relative z-10 flex h-full flex-col gap-8 overflow-y-auto scroll-smooth px-6 py-10"
+          data-scroll-container
+        >
+          <ProfileCard />
+          <section
+            id="resume"
+            className="mx-auto w-full max-w-5xl space-y-6 scroll-mt-8"
+          >
+            <SectionHeader
+              id="resume"
+              title="Resumé"
+              description="Full-stack leadership, compliance-driven systems, and automation."
+            />
             <div className="card border border-base-300/60 bg-base-100/70 shadow-2xl backdrop-blur rounded-2xl">
               <div className="card-body gap-6 text-left">
                 <div className="space-y-3">
@@ -348,16 +294,15 @@ function App() {
               </div>
             </div>
           </section>
-          <section className="mx-auto w-full max-w-5xl space-y-6">
-            <div className="text-center">
-              <h2 className="text-2xl font-semibold">
-                Public Professional Work
-              </h2>
-              <p className="text-sm text-base-content/70">
-                Select applications I've worked on professionally that can be
-                shared.
-              </p>
-            </div>
+          <section
+            id="public-work"
+            className="mx-auto w-full max-w-5xl space-y-6 scroll-mt-8"
+          >
+            <SectionHeader
+              id="public-work"
+              title="Public Professional Work"
+              description="Select applications I've worked on professionally that can be shared."
+            />
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               <OpenSourceCard
                 name="YD Mobile"
@@ -404,13 +349,15 @@ function App() {
               />
             </div>
           </section>
-          <section className="mx-auto w-full max-w-5xl space-y-6 pb-10">
-            <div className="text-center">
-              <h2 className="text-2xl font-semibold">Open Source</h2>
-              <p className="text-sm text-base-content/70">
-                Projects I maintain or help maintain.
-              </p>
-            </div>
+          <section
+            id="open-source"
+            className="mx-auto w-full max-w-5xl space-y-6 pb-10 scroll-mt-8"
+          >
+            <SectionHeader
+              id="open-source"
+              title="Open Source"
+              description="Projects I maintain or help maintain."
+            />
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               <NpmPackageCard
                 name="react-native-device-info"
@@ -512,16 +459,25 @@ function App() {
               />
             </div>
           </section>
-          <section className="mx-auto w-full max-w-5xl space-y-6">
-            <div className="text-center">
-              <h2 className="text-2xl font-semibold">Other Things</h2>
-              <p className="text-sm text-base-content/70">
-                Side interests and hobby projects worth sharing.
-              </p>
-            </div>
+          <section
+            id="other-things"
+            className="mx-auto w-full max-w-5xl space-y-6 scroll-mt-8"
+          >
+            <SectionHeader
+              id="other-things"
+              title="Other Things"
+              description="Side interests and hobby projects worth sharing."
+            />
             <div className="space-y-4">
               <div className="flex items-baseline justify-between gap-3">
-                <h3 className="text-lg font-semibold">Commander Decks</h3>
+                <h3 className="text-lg font-semibold" id="commander-decks">
+                  <a
+                    className="underline decoration-transparent underline-offset-4 transition hover:decoration-current"
+                    href="#commander-decks"
+                  >
+                    Commander Decks
+                  </a>
+                </h3>
                 <span className="text-xs uppercase tracking-wide text-base-content/50">
                   Magic: The Gathering
                 </span>
