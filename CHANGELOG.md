@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.7.0](https://github.com/schie/schie.github.io/compare/v1.6.0...v1.7.0) (2026-01-15)
+
+
+### Features
+
+* adding theme and manifest.json ([25415bc](https://github.com/schie/schie.github.io/commit/25415bcb2c6447aa4ec705354bd9c47f113d68f3))
+* expanding homepage content and UI controls ([0bb0d92](https://github.com/schie/schie.github.io/commit/0bb0d92c9783d4c24a40e5c9cbacdcbd7d538395))
+
 ## [1.6.0](https://github.com/schie/schie.github.io/compare/v1.5.0...v1.6.0) (2026-01-12)
 
 
