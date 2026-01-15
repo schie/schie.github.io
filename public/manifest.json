@@ -1,0 +1,16 @@
+{
+  "name": "Dustin Schie",
+  "short_name": "Schie",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#0b1224",
+  "icons": [
+    {
+      "src": "/schie.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}
