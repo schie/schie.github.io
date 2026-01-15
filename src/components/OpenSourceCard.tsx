@@ -1,4 +1,4 @@
-import { FaviconIcon } from "./FaviconIcon";
+import { SiteIcon } from "./SiteIcon";
 
 import type { ReactNode } from "react";
 
@@ -59,7 +59,7 @@ export function OpenSourceCard({
             target="_blank"
             rel="noreferrer"
           >
-            <FaviconIcon href={href} size={32} />
+            <SiteIcon href={href} label={primaryLabel} />
             {primaryLabel}
           </a>
           {links.map((link) => (
@@ -70,7 +70,7 @@ export function OpenSourceCard({
               target="_blank"
               rel="noreferrer"
             >
-              <FaviconIcon href={link.href} size={32} />
+              <SiteIcon href={link.href} label={link.label} />
               {link.label}
             </a>
           ))}

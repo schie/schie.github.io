@@ -1,8 +1,14 @@
-import { useCallback, useEffect, useRef } from 'react';
-import { CELL_SIZE, type Bounds, type LiveCell, type WorkerMessage, type WorkerResponse } from '../lifeTypes';
-import { useLifeBoardControls } from '../contexts/LifeBoardContext';
+import { useCallback, useEffect, useRef } from "react";
+import {
+  CELL_SIZE,
+  type Bounds,
+  type LiveCell,
+  type WorkerMessage,
+  type WorkerResponse,
+} from "../lifeTypes";
+import { useLifeBoardControls } from "../contexts/LifeBoardContext";
 
-const SPEED_MS = 60;
+const SPEED_MS = 90;
 const SEED_DENSITY = 0.7;
 const VERTEX_SRC = `
   attribute vec2 a_position;
@@ -53,7 +59,7 @@ export function LifeBackground() {
     const canvas = canvasRef.current;
     if (!canvas) return undefined;
 
-    const gl = canvas.getContext('webgl');
+    const gl = canvas.getContext("webgl");
     if (!gl) return undefined;
 
     const compile = (type: number, src: string) => {
@@ -69,13 +75,13 @@ export function LifeBackground() {
     gl.linkProgram(program);
     gl.useProgram(program);
 
-    const positionLoc = gl.getAttribLocation(program, 'a_position');
-    const translateLoc = gl.getUniformLocation(program, 'u_translate');
-    const scaleLoc = gl.getUniformLocation(program, 'u_scale');
-    const canvasSizeLoc = gl.getUniformLocation(program, 'u_canvasSize');
-    const cellSizeLoc = gl.getUniformLocation(program, 'u_cellSize');
-    const paddingLoc = gl.getUniformLocation(program, 'u_padding');
-    const cornerLoc = gl.getUniformLocation(program, 'u_corner');
+    const positionLoc = gl.getAttribLocation(program, "a_position");
+    const translateLoc = gl.getUniformLocation(program, "u_translate");
+    const scaleLoc = gl.getUniformLocation(program, "u_scale");
+    const canvasSizeLoc = gl.getUniformLocation(program, "u_canvasSize");
+    const cellSizeLoc = gl.getUniformLocation(program, "u_cellSize");
+    const paddingLoc = gl.getUniformLocation(program, "u_padding");
+    const cornerLoc = gl.getUniformLocation(program, "u_corner");
 
     const buffer = gl.createBuffer();
     gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
@@ -92,7 +98,11 @@ export function LifeBackground() {
         data[i * 2 + 1] = cells[i].y;
       }
       gl.bufferData(gl.ARRAY_BUFFER, data, gl.DYNAMIC_DRAW);
-      gl.uniform2f(translateLoc, transformRef.current.x, transformRef.current.y);
+      gl.uniform2f(
+        translateLoc,
+        transformRef.current.x,
+        transformRef.current.y
+      );
       gl.uniform1f(scaleLoc, transformRef.current.k);
       gl.uniform2f(canvasSizeLoc, canvas.width, canvas.height);
       gl.uniform1f(cellSizeLoc, CELL_SIZE);
@@ -118,20 +128,26 @@ export function LifeBackground() {
         minRow: -Math.ceil(rows / 2),
         maxRow: Math.ceil(rows / 2),
       };
-      transformRef.current = { x: canvas.width / 2, y: canvas.height / 2, k: 1 };
+      transformRef.current = {
+        x: canvas.width / 2,
+        y: canvas.height / 2,
+        k: 1,
+      };
       draw(cellsRef.current);
     };
 
     resize();
-    window.addEventListener('resize', resize);
+    window.addEventListener("resize", resize);
 
     return () => {
-      window.removeEventListener('resize', resize);
+      window.removeEventListener("resize", resize);
     };
   }, []);
 
   useEffect(() => {
-    const worker = new Worker(new URL('../lifeWorker.ts', import.meta.url), { type: 'module' });
+    const worker = new Worker(new URL("../lifeWorker.ts", import.meta.url), {
+      type: "module",
+    });
     workerRef.current = worker;
 
     const handleMessage = (event: MessageEvent<WorkerResponse>) => {
@@ -140,14 +156,17 @@ export function LifeBackground() {
       renderRef.current?.(cells);
     };
 
-    worker.addEventListener('message', handleMessage);
-    worker.postMessage({ type: 'init', payload: { density: SEED_DENSITY, bounds: boundsRef.current } });
+    worker.addEventListener("message", handleMessage);
+    worker.postMessage({
+      type: "init",
+      payload: { density: SEED_DENSITY, bounds: boundsRef.current },
+    });
 
     return () => {
       if (timerRef.current) {
         window.clearInterval(timerRef.current);
       }
-      worker.removeEventListener('message', handleMessage);
+      worker.removeEventListener("message", handleMessage);
       worker.terminate();
     };
   }, []);
@@ -155,7 +174,7 @@ export function LifeBackground() {
   useEffect(() => {
     if (!running || !workerRef.current) return undefined;
     const id = window.setInterval(() => {
-      sendToWorker({ type: 'step' });
+      sendToWorker({ type: "step" });
     }, SPEED_MS);
     timerRef.current = id;
     return () => window.clearInterval(id);
@@ -163,7 +182,10 @@ export function LifeBackground() {
 
   useEffect(() => {
     if (!workerRef.current || randomizeToken === 0) return;
-    sendToWorker({ type: 'randomize', payload: { density: SEED_DENSITY, bounds: boundsRef.current } });
+    sendToWorker({
+      type: "randomize",
+      payload: { density: SEED_DENSITY, bounds: boundsRef.current },
+    });
   }, [randomizeToken, sendToWorker]);
 
   return (

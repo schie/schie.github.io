@@ -1,4 +1,3 @@
-import { FaviconIcon } from "./FaviconIcon";
 import profilePic from "../assets/profile.jpeg";
 
 export function ProfileCard() {
@@ -16,22 +15,13 @@ export function ProfileCard() {
           </div>
           <div className="card-actions flex-wrap justify-center">
             <a
-              className="btn btn-soft btn-info gap-2 rounded-2xl"
-              href="https://bsky.app/profile/schie.io"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaviconIcon href="https://bsky.app/profile/schie.io" size={32} />
-              Bluesky
-            </a>
-            <a
               className="btn btn-soft gap-2 rounded-2xl"
               href="https://github.com/schie"
               target="_blank"
               rel="noreferrer"
             >
-              <FaviconIcon href="https://github.com/schie" size={32} />
-              GitHub
+              <i className="fa-brands fa-github text-xl" aria-hidden="true" />
+              @schie
             </a>
             <a
               className="btn btn-soft gap-2 rounded-2xl btn-accent"
@@ -39,11 +29,20 @@ export function ProfileCard() {
               target="_blank"
               rel="noreferrer"
             >
-              <FaviconIcon
-                href="https://www.linkedin.com/in/dustin-schie-9431945b"
-                size={32}
+              <i
+                className="fa-brands fa-linkedin-in text-xl"
+                aria-hidden="true"
               />
               LinkedIn
+            </a>
+            <a
+              className="btn btn-soft btn-info gap-2 rounded-2xl"
+              href="https://bsky.app/profile/schie.io"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="fa-brands fa-bluesky text-xl" aria-hidden="true" />
+              @schie.io
             </a>
           </div>
         </div>

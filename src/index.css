@@ -6,6 +6,11 @@
   --text-primary: #0f172a;
   --text-muted: #1f2937;
   --text-subtle: #475569;
+  --mana-blue: #1e5aa8;
+  --mana-red: #c0312e;
+  --mana-white: #b08a3e;
+  --mana-green: #1f7a4a;
+  --mana-black: #3b2f2a;
 }
 
 :root[data-theme='dark'] {
@@ -14,6 +19,11 @@
   --text-primary: #e2e8f0;
   --text-muted: #cbd5e1;
   --text-subtle: #94a3b8;
+  --mana-blue: #6fb0ff;
+  --mana-red: #ff6b6b;
+  --mana-white: #f4e6b7;
+  --mana-green: #65d17a;
+  --mana-black: #c4b9b0;
 }
 
 :root[data-theme='light'] {
