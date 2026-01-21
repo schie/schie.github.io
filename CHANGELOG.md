@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.1](https://github.com/schie/schie.github.io/compare/v1.7.0...v1.7.1) (2026-01-21)
+
+
+### Bug Fixes
+
+* **resume:** updating resume section ([3b622ae](https://github.com/schie/schie.github.io/commit/3b622ae38e78822976d6ab479037e821a4472dda))
+
 ## [1.7.0](https://github.com/schie/schie.github.io/compare/v1.6.0...v1.7.0) (2026-01-15)
 
 
