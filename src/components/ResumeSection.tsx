@@ -66,14 +66,13 @@ export function ResumeSection() {
               Seasoned Full-Stack Developer with over a decade of experience
               architecting scalable solutions, mentoring teams, and solving
               complex problems in compliance-driven industries. Expertise in
-              React, TypeScript, GraphQL, Ruby, and CI/CD pipelines. Leads
-              GitHub Actions automation for release workflows, QA builds, and
-              delivery pipelines, plus Ruby-based Fastlane workflows for iOS
-              and Android. Pushes innovation by setting strong foundations
-              through strict standards adherence. Proven ability to lead
-              multi-quarter projects and deliver impactful, maintainable
-              software solutions that empower teams and improve operational
-              efficiency.
+              React, TypeScript, GraphQL, and CI/CD pipelines. Leads GitHub
+              Actions automation for release workflows, QA builds, and delivery
+              pipelines, plus Ruby-based Fastlane workflows for iOS and Android.
+              Pushes innovation by setting strong foundations through strict
+              standards adherence. Proven ability to lead multi-quarter projects
+              and deliver impactful, maintainable software solutions that
+              empower teams and improve operational efficiency.
             </p>
           </div>
           <div className="space-y-3">
@@ -82,7 +81,7 @@ export function ResumeSection() {
               <div className="space-y-2">
                 <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
                   <div className="font-semibold">
-                    Senior Full-Stack Developer ·{" "}
+                    Senior Developer ·{" "}
                     <a
                       className="link link-primary"
                       href="https://www.yellowdogsoftware.com"
@@ -93,43 +92,100 @@ export function ResumeSection() {
                     </a>
                   </div>
                   <div className="text-xs text-base-content/60">
-                    Mar 2017 - Present
+                    Jul 2022 - Present
                   </div>
                 </div>
                 <ul className="list-disc space-y-1 pl-5 text-sm text-base-content/70">
                   <li>
-                    Architected and implemented the Dingo GraphQL API,
-                    increasing data efficiency by 30%.
+                    Leads React/Vite architecture patterns and component
+                    conventions to keep the frontend maintainable at scale.
                   </li>
                   <li>
-                    Scaled deployment pipelines with GitHub Actions and Sentry,
-                    reducing deployment time.
+                    Leads GraphQL schema design and versioning strategy in
+                    Apollo Server to keep clients stable.
                   </li>
                   <li>
-                    Unblocked teammates through guidance, thorough PR reviews,
-                    and clear technical specs.
+                    Improves API performance with caching, batching, and
+                    resolver optimization.
                   </li>
                   <li>
-                    Automated iOS and Android build/test/release workflows with
-                    Ruby and Fastlane.
+                    Owns React Native release workflows with Fastlane, reducing
+                    build friction and release risk.
                   </li>
                   <li>
-                    Led RFID integration in Count XL and built Balto web pages
-                    for RFID tag printing.
+                    Owns mobile release compliance (signing, provisioning, store
+                    metadata, phased rollouts).
                   </li>
                   <li>
-                    Automated release cycles with release-please across
-                    applications and libraries.
+                    Improves React + Amplify deployment workflows by
+                    collaborating with DevOps on CI/CD guardrails and previews.
                   </li>
                   <li>
-                    Maintained 100% code coverage for internal libraries.
+                    Contributes to Dockerization, ECS deployments, and
+                    Terraform changes in partnership with DevOps.
                   </li>
                   <li>
-                    Go-to developer for git troubleshooting and best practices.
+                    Improves production visibility by adding Sentry across web,
+                    mobile, and API projects (3 React Native apps, 3 React apps,
+                    3 RESTful APIs, 1 GraphQL API, 1 AWS SAM application),
+                    cutting customer-reported error resolution time by up to
+                    200%.
                   </li>
                   <li>
-                    Partnered cross-functionally to ship maintainable, scalable
-                    solutions.
+                    Improves test rigor by maintaining 100% code coverage
+                    across five internal libraries.
+                  </li>
+                  <li>
+                    Improves developer experience with local tooling, scripts,
+                    and docs to shorten onboarding.
+                  </li>
+                </ul>
+              </div>
+              <div className="space-y-2">
+                <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+                  <div className="font-semibold">
+                    Developer ·{" "}
+                    <a
+                      className="link link-primary"
+                      href="https://www.yellowdogsoftware.com"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Yellow Dog Software
+                    </a>
+                  </div>
+                  <div className="text-xs text-base-content/60">
+                    Mar 2017 - Jul 2022
+                  </div>
+                </div>
+                <ul className="list-disc space-y-1 pl-5 text-sm text-base-content/70">
+                  <li>
+                    Led the proof-of-concept that replaced a scrapped mobile
+                    effort and became the company's first shipped mobile app.
+                  </li>
+                  <li>
+                    Expanded the product footprint from one core app and a
+                    single web API to 3 mobile apps (iOS and Android), 3+ web
+                    apps, and multiple web APIs through direct contributions.
+                  </li>
+                  <li>
+                    Improves data efficiency by architecting and implementing
+                    the Dingo GraphQL API, boosting it by 60%.
+                  </li>
+                  <li>
+                    Owns iOS and Android build/test/release automation with Ruby
+                    and Fastlane.
+                  </li>
+                  <li>
+                    Leads git troubleshooting and best-practice guidance for the
+                    team.
+                  </li>
+                  <li>
+                    Leads cross-functional collaboration to ship maintainable,
+                    scalable solutions.
+                  </li>
+                  <li>
+                    Earned promotion to Senior Developer in Jul 2022.
                   </li>
                 </ul>
               </div>
