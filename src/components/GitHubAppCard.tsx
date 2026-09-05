@@ -11,7 +11,7 @@ const githubStatsCache = new Map<string, Promise<GitHubStats | null>>();
 async function fetchGitHubStats(repo: string): Promise<GitHubStats | null> {
   try {
     const tagsResponse = await fetch(
-      `https://api.github.com/repos/${repo}/tags?per_page=1`
+      `https://api.github.com/repos/${repo}/tags?per_page=1`,
     );
     if (!tagsResponse.ok) {
       return null;

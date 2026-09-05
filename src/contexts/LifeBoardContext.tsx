@@ -19,7 +19,7 @@ type LifeBoardContextValue = {
 };
 
 const LifeBoardContext = createContext<LifeBoardContextValue | undefined>(
-  undefined
+  undefined,
 );
 
 type ProviderProps = {
@@ -81,7 +81,7 @@ export function LifeBoardProvider({ children }: ProviderProps) {
       randomizeToken,
       isForegroundVisible,
       toggleForegroundVisibility,
-    ]
+    ],
   );
 
   return (
@@ -95,7 +95,7 @@ export function useLifeBoardControls() {
   const context = useContext(LifeBoardContext);
   if (!context) {
     throw new Error(
-      "useLifeBoardControls must be used within LifeBoardProvider"
+      "useLifeBoardControls must be used within LifeBoardProvider",
     );
   }
   return context;

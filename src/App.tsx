@@ -44,7 +44,7 @@ function AppShell() {
       ([entry]) => {
         setShowMobileFooter(!entry.isIntersecting);
       },
-      { root: mainRef.current, threshold: 0.25 }
+      { root: mainRef.current, threshold: 0.25 },
     );
 
     observer.observe(profileElement);

@@ -121,8 +121,8 @@ export function ResumeSection() {
                     collaborating with DevOps on CI/CD guardrails and previews.
                   </li>
                   <li>
-                    Contributes to Dockerization, ECS deployments, and
-                    Terraform changes in partnership with DevOps.
+                    Contributes to Dockerization, ECS deployments, and Terraform
+                    changes in partnership with DevOps.
                   </li>
                   <li>
                     Improves production visibility by adding Sentry across web,
@@ -132,8 +132,8 @@ export function ResumeSection() {
                     200%.
                   </li>
                   <li>
-                    Improves test rigor by maintaining 100% code coverage
-                    across five internal libraries.
+                    Improves test rigor by maintaining 100% code coverage across
+                    five internal libraries.
                   </li>
                   <li>
                     Improves developer experience with local tooling, scripts,
@@ -184,9 +184,7 @@ export function ResumeSection() {
                     Leads cross-functional collaboration to ship maintainable,
                     scalable solutions.
                   </li>
-                  <li>
-                    Earned promotion to Senior Developer in Jul 2022.
-                  </li>
+                  <li>Earned promotion to Senior Developer in Jul 2022.</li>
                 </ul>
               </div>
               <div className="space-y-2">

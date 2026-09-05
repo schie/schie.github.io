@@ -13,7 +13,7 @@
   --mana-black: #3b2f2a;
 }
 
-:root[data-theme='dark'] {
+:root[data-theme="dark"] {
   color-scheme: dark;
   --app-bg: linear-gradient(135deg, #0b1224, #0f172a 50%, #0a0f1c 100%);
   --text-primary: #e2e8f0;
@@ -26,7 +26,7 @@
   --mana-black: #c4b9b0;
 }
 
-:root[data-theme='light'] {
+:root[data-theme="light"] {
   color-scheme: light;
   --app-bg: radial-gradient(circle at 20% 20%, #f8fafc, #e2e8f0);
   --text-primary: #0f172a;

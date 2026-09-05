@@ -25,7 +25,7 @@ export function Controls({
     <div className="grid gap-3 rounded-xl border border-base-300/60 bg-base-100/60 p-3 shadow">
       <div className="flex flex-wrap gap-2">
         <button className="btn btn-primary" onClick={onToggleRunning}>
-          {running ? 'Pause' : 'Resume'}
+          {running ? "Pause" : "Resume"}
         </button>
         <button className="btn" onClick={onStep} disabled={running}>
           Step
@@ -58,7 +58,9 @@ export function Controls({
         <label className="form-control w-full">
           <div className="label">
             <span className="label-text">Seed density</span>
-            <span className="label-text-alt text-cyan-300">{Math.round(density * 100)}%</span>
+            <span className="label-text-alt text-cyan-300">
+              {Math.round(density * 100)}%
+            </span>
           </div>
           <input
             type="range"

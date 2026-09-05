@@ -55,7 +55,5 @@ export function SiteIcon({
   const domain = getDomain(href);
   if (!domain) return null;
   const iconClassName = useIconClassName(href, label);
-  return (
-    <i className={`${iconClassName} ${className}`} aria-hidden="true" />
-  );
+  return <i className={`${iconClassName} ${className}`} aria-hidden="true" />;
 }

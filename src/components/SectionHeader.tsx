@@ -22,7 +22,7 @@ export function SectionHeader({ id, title, description }: SectionHeaderProps) {
       ([entry]) => {
         setIsStuck(!entry.isIntersecting);
       },
-      { root, threshold: 0 }
+      { root, threshold: 0 },
     );
 
     observer.observe(sentinel);
@@ -38,7 +38,7 @@ export function SectionHeader({ id, title, description }: SectionHeaderProps) {
           ? "border-primary shadow-lg shadow-primary"
           : "border-transparent shadow-none"
       }`,
-    [isStuck]
+    [isStuck],
   );
 
   return (

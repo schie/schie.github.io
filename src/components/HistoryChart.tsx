@@ -1,4 +1,4 @@
-import * as d3 from 'd3';
+import * as d3 from "d3";
 
 type Point = { generation: number; alive: number };
 
@@ -20,18 +20,24 @@ export function HistoryChart({
   pad = 10,
 }: Props) {
   const buildPath = (data: Point[], accessor: (d: Point) => number) => {
-    if (data.length < 2) return '';
+    if (data.length < 2) return "";
     const startGen = data[0].generation;
     const endGen = data[data.length - 1].generation;
     const safeEnd = endGen === startGen ? startGen + 1 : endGen;
-    const xScale = d3.scaleLinear().domain([startGen, safeEnd]).range([pad, width - pad]);
+    const xScale = d3
+      .scaleLinear()
+      .domain([startGen, safeEnd])
+      .range([pad, width - pad]);
     const maxY = Math.max(1, ...data.map((d) => accessor(d)));
-    const yScale = d3.scaleLinear().domain([0, maxY]).range([height - pad, pad]);
+    const yScale = d3
+      .scaleLinear()
+      .domain([0, maxY])
+      .range([height - pad, pad]);
     return (
       d3
         .line<Point>()
         .x((d) => xScale(d.generation))
-        .y((d) => yScale(accessor(d)))(data) ?? ''
+        .y((d) => yScale(accessor(d)))(data) ?? ""
     );
   };
 
@@ -65,7 +71,11 @@ export function HistoryChart({
         <path d={genPath} fill="none" stroke="#fbbf24" strokeWidth={2} />
         <path d={alivePath} fill="none" stroke="#22d3ee" strokeWidth={2} />
         {history.length > 0 && (
-          <text x={pad} y={pad + 10} className="fill-[color:var(--text-subtle)] text-[10px]">
+          <text
+            x={pad}
+            y={pad + 10}
+            className="fill-[color:var(--text-subtle)] text-[10px]"
+          >
             {`Gen ${generation.toLocaleString()} — Alive ${alive.toLocaleString()}`}
           </text>
         )}

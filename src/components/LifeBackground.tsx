@@ -101,7 +101,7 @@ export function LifeBackground() {
       gl.uniform2f(
         translateLoc,
         transformRef.current.x,
-        transformRef.current.y
+        transformRef.current.y,
       );
       gl.uniform1f(scaleLoc, transformRef.current.k);
       gl.uniform2f(canvasSizeLoc, canvas.width, canvas.height);
