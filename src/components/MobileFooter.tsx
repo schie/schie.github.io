@@ -48,7 +48,7 @@ export function MobileFooter({ isVisible }: MobileFooterProps) {
       <div className="pointer-events-auto flex items-center justify-between gap-3 rounded-2xl border border-base-300/70 bg-base-100/80 px-3 py-2 shadow-lg backdrop-blur">
         <div className="flex items-center gap-3">
           <div className="avatar">
-            <div className="h-10 w-10 rounded-full ring-2 ring-primary ring-offset-2 ring-offset-base-100">
+            <div className="h-10 w-10 rounded-full ring-2 ring-base-300 ring-offset-2 ring-offset-base-100">
               <img src={profilePic} alt="Portrait of Dustin Schie" />
             </div>
           </div>
@@ -58,7 +58,7 @@ export function MobileFooter({ isVisible }: MobileFooterProps) {
         </div>
         <div className="flex items-center gap-2">
           <a
-            className="btn btn-sm btn-circle btn-neutral shadow shadow-neutral"
+            className="btn btn-sm btn-circle btn-neutral shadow"
             href="https://github.com/schie"
             target="_blank"
             rel="noreferrer"
@@ -69,7 +69,7 @@ export function MobileFooter({ isVisible }: MobileFooterProps) {
             <i className="fa-brands fa-github text-lg" aria-hidden="true" />
           </a>
           <a
-            className="btn btn-sm btn-circle btn-accent shadow shadow-accent"
+            className="btn btn-sm btn-circle btn-accent shadow"
             href="https://www.linkedin.com/in/dustin-schie-9431945b"
             target="_blank"
             rel="noreferrer"
@@ -83,7 +83,7 @@ export function MobileFooter({ isVisible }: MobileFooterProps) {
             />
           </a>
           <a
-            className="btn btn-sm btn-circle btn-info shadow shadow-info"
+            className="btn btn-sm btn-circle btn-info shadow"
             href="https://bsky.app/profile/schie.io"
             target="_blank"
             rel="noreferrer"

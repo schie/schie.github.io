@@ -6,7 +6,7 @@ export function ProfileCard() {
       <div className="card border border-base-300/60 bg-base-100/70 shadow-2xl backdrop-blur rounded-2xl">
         <div className="card-body items-center gap-3 px-6 py-5 text-center">
           <div className="avatar">
-            <div className="w-28 rounded-full ring-4 ring-primary ring-offset-4 ring-offset-base-100 shadow-primary shadow-lg">
+            <div className="w-28 rounded-full ring-4 ring-base-300 ring-offset-4 ring-offset-base-100">
               <img src={profilePic} alt="Portrait of Dustin Schie" />
             </div>
           </div>

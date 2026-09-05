@@ -24,6 +24,10 @@
   --mana-white: #f4e6b7;
   --mana-green: #65d17a;
   --mana-black: #c4b9b0;
+  --color-primary: oklch(68% 0.08 240);
+  --color-primary-content: oklch(18% 0.02 240);
+  --color-secondary: oklch(60% 0.04 250);
+  --color-secondary-content: oklch(95% 0.01 250);
 }
 
 :root[data-theme="light"] {
@@ -32,4 +36,8 @@
   --text-primary: #0f172a;
   --text-muted: #1f2937;
   --text-subtle: #475569;
+  --color-primary: oklch(42% 0.06 240);
+  --color-primary-content: oklch(97% 0.01 240);
+  --color-secondary: oklch(48% 0.03 250);
+  --color-secondary-content: oklch(97% 0.01 250);
 }

@@ -34,9 +34,7 @@ export function SectionHeader({ id, title, description }: SectionHeaderProps) {
   const stickyClass = useMemo(
     () =>
       `sticky top-0 z-10 rounded-2xl border-2 bg-base-100/70 py-2 text-center backdrop-blur transition duration-300 ease-out sm:py-3 ${
-        isStuck
-          ? "border-primary shadow-lg shadow-primary"
-          : "border-transparent shadow-none"
+        isStuck ? "border-base-300 shadow-md" : "border-transparent shadow-none"
       }`,
     [isStuck],
   );
@@ -52,7 +50,7 @@ export function SectionHeader({ id, title, description }: SectionHeaderProps) {
                 isStuck ? "opacity-100 scale-100" : "opacity-0 scale-95"
               }`}
             >
-              <div className="h-10 w-10 rounded-full ring-2 ring-primary ring-offset-2 ring-offset-base-100">
+              <div className="h-10 w-10 rounded-full ring-2 ring-base-300 ring-offset-2 ring-offset-base-100">
                 <img src={profilePic} alt="Portrait of Dustin Schie" />
               </div>
             </div>
