@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import profilePic from "../assets/profile.jpeg";
+import profilePic from "../assets/profile.webp";
 
 type SectionHeaderProps = {
   id: string;
