@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.8.0](https://github.com/schie/schie.github.io/compare/v1.7.1...v1.8.0) (2026-09-05)
+
+
+### Features
+
+* **reading:** add currently-reading and recently-finished books from Hardcover ([76e6607](https://github.com/schie/schie.github.io/commit/76e66072d659601e43bb291f4e4bfcc43e99c1bb))
+* **theme:** mute purple accents and remove decorative glow effects ([f0a7e2e](https://github.com/schie/schie.github.io/commit/f0a7e2ec63551562252dc1bfaec3bbbd3e55a32e))
+
 ## [1.7.1](https://github.com/schie/schie.github.io/compare/v1.7.0...v1.7.1) (2026-01-21)
 
 
