@@ -8,6 +8,7 @@ import { SectionHeader } from "./components/SectionHeader";
 import { ResumeSection } from "./components/ResumeSection";
 import { MobileFooter } from "./components/MobileFooter";
 import { CommanderDecksSection } from "./components/CommanderDecksSection";
+import { BooksSection } from "./components/BooksSection";
 import {
   LifeBoardProvider,
   useLifeBoardControls,
@@ -238,6 +239,7 @@ function AppShell() {
             description="Side interests and hobby projects worth sharing."
           />
           <div className="h-8" aria-hidden="true" />
+          <BooksSection />
           <CommanderDecksSection />
         </section>
         <div className="h-64" aria-hidden="true" />
