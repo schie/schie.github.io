@@ -54,7 +54,7 @@ jobs:
           MARKDOWN_CONFIG_FILE: .markdown-lint.yml
 
           # Exclude patterns
-          FILTER_REGEX_EXCLUDE: .*/(node_modules|dist|coverage|\.git|__fixtures__)/.*
+          FILTER_REGEX_EXCLUDE: .*/(node_modules|dist|coverage|\.git|__fixtures__)/.*|pnpm-lock\.yaml
 
           # Output configuration
           LOG_LEVEL: INFO

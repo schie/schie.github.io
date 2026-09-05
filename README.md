@@ -14,7 +14,7 @@ projects.
 
 ## Development
 
-- `npm run dev` - start local dev server
-- `npm run build` - typecheck and build for production
-- `npm run preview` - preview the production build
-- `npm run lint` - run ESLint
+- `pnpm dev` - start local dev server
+- `pnpm build` - typecheck and build for production
+- `pnpm preview` - preview the production build
+- `pnpm lint` - run ESLint
