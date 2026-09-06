@@ -29,13 +29,6 @@ export const currentlyReading: HardcoverBook[] = [
     imageUrl:
       "https://assets.hardcover.app/external_data/35422191/0fa8d7ceb502714596fbe26e4d6ae98d314e01fb.jpeg",
   },
-  {
-    title: "Arcanum Unbounded: The Cosmere Collection",
-    slug: "arcanum-unbounded",
-    author: "Brandon Sanderson",
-    imageUrl:
-      "https://assets.hardcover.app/edition/31276301/b5b1c6b758306caf9553430c4ccf576f29b9bd19.jpeg",
-  },
 ];
 
 export const recentlyFinished: FinishedHardcoverBook[] = [
