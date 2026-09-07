@@ -23,6 +23,20 @@ export const currentlyReading: HardcoverBook[] = [
       "https://assets.hardcover.app/edition/30447628/23d6f2bd-115d-450f-a731-9fbcb59b04e8.jpg",
   },
   {
+    title: "Empire of the Vampire",
+    slug: "empire-of-the-vampire",
+    author: "Bon Orthwick, Jay Kristoff",
+    imageUrl:
+      "https://assets.hardcover.app/editions/30548430/7973802927976714.jpg",
+  },
+  {
+    title: "The Lost Metal",
+    slug: "the-lost-metal",
+    author: "Brandon Sanderson",
+    imageUrl:
+      "https://assets.hardcover.app/external_data/60987563/93e411dc55a6e9763635437407af2309d749fc4a.jpeg",
+  },
+  {
     title: "The Wild Robot Escapes",
     slug: "the-wild-robot-escapes",
     author: "Peter  Brown",
