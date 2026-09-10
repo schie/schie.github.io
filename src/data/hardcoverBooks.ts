@@ -16,13 +16,6 @@ export type FinishedHardcoverBook = HardcoverBook & {
 
 export const currentlyReading: HardcoverBook[] = [
   {
-    title: "Kings of the Wyld",
-    slug: "kings-of-the-wyld",
-    author: "Nicholas Eames",
-    imageUrl:
-      "https://assets.hardcover.app/edition/30447628/23d6f2bd-115d-450f-a731-9fbcb59b04e8.jpg",
-  },
-  {
     title: "Empire of the Vampire",
     slug: "empire-of-the-vampire",
     author: "Bon Orthwick, Jay Kristoff",
@@ -46,6 +39,15 @@ export const currentlyReading: HardcoverBook[] = [
 ];
 
 export const recentlyFinished: FinishedHardcoverBook[] = [
+  {
+    title: "Kings of the Wyld",
+    slug: "kings-of-the-wyld",
+    author: "Nicholas Eames",
+    imageUrl:
+      "https://assets.hardcover.app/edition/30447628/23d6f2bd-115d-450f-a731-9fbcb59b04e8.jpg",
+    rating: 3.5,
+    finishedDate: "2026-09-09",
+  },
   {
     title: "Warbreaker",
     slug: "warbreaker",
@@ -83,20 +85,12 @@ export const recentlyFinished: FinishedHardcoverBook[] = [
     finishedDate: "2026-08-25",
   },
   {
-    title: "One Dark Window",
-    slug: "one-dark-window",
-    author: "Rachel Gillig",
+    title: "Heretical Fishing",
+    slug: "heretical-fishing",
+    author: "Haylock Jobson",
     imageUrl:
-      "https://assets.hardcover.app/edition/31828939/9cf81169b82316d77a84c61e95c7edee0ca281b2.jpeg",
-    rating: 2,
-    finishedDate: "2026-08-01",
-  },
-  {
-    title: "He Who Fights with Monsters 12",
-    slug: "he-who-fights-with-monsters-12",
-    author: "Travis Deverell, Shirtaloon",
-    imageUrl:
-      "https://assets.hardcover.app/editions/31894854/5417971590556350.jpg",
+      "https://assets.hardcover.app/editions/31315262/5018787241808209.jpg",
+    rating: 3.5,
     finishedDate: "2026-08-01",
   },
 ];
