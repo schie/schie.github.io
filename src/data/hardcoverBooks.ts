@@ -16,18 +16,18 @@ export type FinishedHardcoverBook = HardcoverBook & {
 
 export const currentlyReading: HardcoverBook[] = [
   {
-    title: "Empire of the Vampire",
-    slug: "empire-of-the-vampire",
-    author: "Bon Orthwick, Jay Kristoff",
+    title: "Empire of the Damned",
+    slug: "empire-of-the-damned",
+    author: "Jay Kristoff, Bon Orthwick",
     imageUrl:
-      "https://assets.hardcover.app/editions/30548430/7973802927976714.jpg",
+      "https://assets.hardcover.app/edition/30883078/8478f02bc95cd56438f20ef95050d0cec01d8cb1.jpeg",
   },
   {
-    title: "The Lost Metal",
-    slug: "the-lost-metal",
+    title: "The Fires of December",
+    slug: "the-fires-of-december",
     author: "Brandon Sanderson",
     imageUrl:
-      "https://assets.hardcover.app/external_data/60987563/93e411dc55a6e9763635437407af2309d749fc4a.jpeg",
+      "https://assets.hardcover.app/user/8753/9b7a2231-1d41-46f2-99ad-ea4a9cdc3ea4.png",
   },
   {
     title: "The Wild Robot Escapes",
@@ -39,6 +39,24 @@ export const currentlyReading: HardcoverBook[] = [
 ];
 
 export const recentlyFinished: FinishedHardcoverBook[] = [
+  {
+    title: "The Lost Metal",
+    slug: "the-lost-metal",
+    author: "Brandon Sanderson",
+    imageUrl:
+      "https://assets.hardcover.app/external_data/60987563/93e411dc55a6e9763635437407af2309d749fc4a.jpeg",
+    rating: 4.5,
+    finishedDate: "2026-09-20",
+  },
+  {
+    title: "Empire of the Vampire",
+    slug: "empire-of-the-vampire",
+    author: "Bon Orthwick, Jay Kristoff",
+    imageUrl:
+      "https://assets.hardcover.app/editions/30548430/7973802927976714.jpg",
+    rating: 4.5,
+    finishedDate: "2026-09-16",
+  },
   {
     title: "Kings of the Wyld",
     slug: "kings-of-the-wyld",
@@ -74,23 +92,5 @@ export const recentlyFinished: FinishedHardcoverBook[] = [
       "https://assets.hardcover.app/editions/30399304/9d841b1c-40c4-4a52-96bc-221d34dbfe7e-71ISjS3nFsL._AC_UF1000,1000_QL80_.jpg",
     rating: 4.5,
     finishedDate: "2026-08-26",
-  },
-  {
-    title: "The Bands of Mourning",
-    slug: "the-bands-of-mourning",
-    author: "Brandon Sanderson",
-    imageUrl:
-      "https://assets.hardcover.app/edition/20771821/40fd57bc-2a56-415b-8710-2d16878316b8.jpg",
-    rating: 4.5,
-    finishedDate: "2026-08-25",
-  },
-  {
-    title: "Heretical Fishing",
-    slug: "heretical-fishing",
-    author: "Haylock Jobson",
-    imageUrl:
-      "https://assets.hardcover.app/editions/31315262/5018787241808209.jpg",
-    rating: 3.5,
-    finishedDate: "2026-08-01",
   },
 ];
