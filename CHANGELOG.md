@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.8.2](https://github.com/schie/schie.github.io/compare/v1.8.1...v1.8.2) (2026-09-27)
+
+
+### Bug Fixes
+
+* **reading:** sync hardcover reading data ([d6db0be](https://github.com/schie/schie.github.io/commit/d6db0bef5bd6faa1ad5bc04a991ec96774c042a1))
+* **reading:** sync hardcover reading data ([75573e0](https://github.com/schie/schie.github.io/commit/75573e00b1590ff34938b28910be07adf622d2fd))
+
 ## [1.8.1](https://github.com/schie/schie.github.io/compare/v1.8.0...v1.8.1) (2026-09-07)
 
 
