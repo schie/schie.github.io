@@ -23,13 +23,6 @@ export const currentlyReading: HardcoverBook[] = [
       "https://assets.hardcover.app/edition/30883078/8478f02bc95cd56438f20ef95050d0cec01d8cb1.jpeg",
   },
   {
-    title: "The Fires of December",
-    slug: "the-fires-of-december",
-    author: "Brandon Sanderson",
-    imageUrl:
-      "https://assets.hardcover.app/user/8753/9b7a2231-1d41-46f2-99ad-ea4a9cdc3ea4.png",
-  },
-  {
     title: "The Wild Robot Escapes",
     slug: "the-wild-robot-escapes",
     author: "Peter  Brown",
@@ -39,6 +32,15 @@ export const currentlyReading: HardcoverBook[] = [
 ];
 
 export const recentlyFinished: FinishedHardcoverBook[] = [
+  {
+    title: "The Fires of December",
+    slug: "the-fires-of-december",
+    author: "Brandon Sanderson",
+    imageUrl:
+      "https://assets.hardcover.app/user/8753/9b7a2231-1d41-46f2-99ad-ea4a9cdc3ea4.png",
+    rating: 4.5,
+    finishedDate: "2026-09-26",
+  },
   {
     title: "The Lost Metal",
     slug: "the-lost-metal",
@@ -83,14 +85,5 @@ export const recentlyFinished: FinishedHardcoverBook[] = [
       "https://assets.hardcover.app/edition/32076091/1fb38c39-58fb-4af1-8960-5b0ff1b9cbb4.jpg",
     rating: 4,
     finishedDate: "2026-08-30",
-  },
-  {
-    title: "Mistborn: Secret History",
-    slug: "mistborn-secret-history",
-    author: "Brandon Sanderson",
-    imageUrl:
-      "https://assets.hardcover.app/editions/30399304/9d841b1c-40c4-4a52-96bc-221d34dbfe7e-71ISjS3nFsL._AC_UF1000,1000_QL80_.jpg",
-    rating: 4.5,
-    finishedDate: "2026-08-26",
   },
 ];
