@@ -16,6 +16,13 @@ export type FinishedHardcoverBook = HardcoverBook & {
 
 export const currentlyReading: HardcoverBook[] = [
   {
+    title: "We Are Legion",
+    slug: "we-are-legion",
+    author: "Dennis E. Taylor",
+    imageUrl:
+      "https://assets.hardcover.app/edition/31651212/0f91da1379dc803e1a880cc526c86661808a6680.jpeg",
+  },
+  {
     title: "Empire of the Damned",
     slug: "empire-of-the-damned",
     author: "Jay Kristoff, Bon Orthwick",
@@ -37,8 +44,8 @@ export const recentlyFinished: FinishedHardcoverBook[] = [
     slug: "the-fires-of-december",
     author: "Brandon Sanderson",
     imageUrl:
-      "https://assets.hardcover.app/user/8753/9b7a2231-1d41-46f2-99ad-ea4a9cdc3ea4.png",
-    rating: 4.5,
+      "https://assets.hardcover.app/edition/32409522/5562a0b7-5a80-4b2e-b8a2-cc8f4780b904.png",
+    rating: 3.5,
     finishedDate: "2026-09-26",
   },
   {
