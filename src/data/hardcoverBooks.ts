@@ -23,11 +23,11 @@ export const currentlyReading: HardcoverBook[] = [
       "https://assets.hardcover.app/edition/31651212/0f91da1379dc803e1a880cc526c86661808a6680.jpeg",
   },
   {
-    title: "Empire of the Damned",
-    slug: "empire-of-the-damned",
-    author: "Jay Kristoff, Bon Orthwick",
+    title: "Piranesi",
+    slug: "piranesi",
+    author: "Susanna Clarke",
     imageUrl:
-      "https://assets.hardcover.app/edition/30883078/8478f02bc95cd56438f20ef95050d0cec01d8cb1.jpeg",
+      "https://assets.hardcover.app/editions/30480426/ec301cb7-b118-48fd-aa3a-5d336e61c182.jpg",
   },
   {
     title: "The Wild Robot Escapes",
@@ -39,6 +39,15 @@ export const currentlyReading: HardcoverBook[] = [
 ];
 
 export const recentlyFinished: FinishedHardcoverBook[] = [
+  {
+    title: "Empire of the Damned",
+    slug: "empire-of-the-damned",
+    author: "Jay Kristoff, Bon Orthwick",
+    imageUrl:
+      "https://assets.hardcover.app/edition/30883078/8478f02bc95cd56438f20ef95050d0cec01d8cb1.jpeg",
+    rating: 5,
+    finishedDate: "2026-09-30",
+  },
   {
     title: "The Fires of December",
     slug: "the-fires-of-december",
@@ -83,14 +92,5 @@ export const recentlyFinished: FinishedHardcoverBook[] = [
       "https://assets.hardcover.app/edition/28188510/d2bfa4645e6a05879e663f2b72264dc150610210.jpeg",
     rating: 4.5,
     finishedDate: "2026-09-05",
-  },
-  {
-    title: "A Short Stay in Hell",
-    slug: "a-short-stay-in-hell",
-    author: "Steven L. Peck",
-    imageUrl:
-      "https://assets.hardcover.app/edition/32076091/1fb38c39-58fb-4af1-8960-5b0ff1b9cbb4.jpg",
-    rating: 4,
-    finishedDate: "2026-08-30",
   },
 ];
