@@ -16,13 +16,6 @@ export type FinishedHardcoverBook = HardcoverBook & {
 
 export const currentlyReading: HardcoverBook[] = [
   {
-    title: "We Are Legion",
-    slug: "we-are-legion",
-    author: "Dennis E. Taylor",
-    imageUrl:
-      "https://assets.hardcover.app/edition/31651212/0f91da1379dc803e1a880cc526c86661808a6680.jpeg",
-  },
-  {
     title: "Piranesi",
     slug: "piranesi",
     author: "Susanna Clarke",
@@ -40,6 +33,15 @@ export const currentlyReading: HardcoverBook[] = [
 
 export const recentlyFinished: FinishedHardcoverBook[] = [
   {
+    title: "We Are Legion",
+    slug: "we-are-legion",
+    author: "Dennis E. Taylor",
+    imageUrl:
+      "https://assets.hardcover.app/edition/31651212/0f91da1379dc803e1a880cc526c86661808a6680.jpeg",
+    rating: 3,
+    finishedDate: "2026-10-02",
+  },
+  {
     title: "Empire of the Damned",
     slug: "empire-of-the-damned",
     author: "Jay Kristoff, Bon Orthwick",
@@ -54,7 +56,7 @@ export const recentlyFinished: FinishedHardcoverBook[] = [
     author: "Brandon Sanderson",
     imageUrl:
       "https://assets.hardcover.app/edition/32409522/5562a0b7-5a80-4b2e-b8a2-cc8f4780b904.png",
-    rating: 3.5,
+    rating: 4,
     finishedDate: "2026-09-26",
   },
   {
@@ -83,14 +85,5 @@ export const recentlyFinished: FinishedHardcoverBook[] = [
       "https://assets.hardcover.app/edition/30447628/23d6f2bd-115d-450f-a731-9fbcb59b04e8.jpg",
     rating: 3.5,
     finishedDate: "2026-09-09",
-  },
-  {
-    title: "Warbreaker",
-    slug: "warbreaker",
-    author: "Brandon Sanderson",
-    imageUrl:
-      "https://assets.hardcover.app/edition/28188510/d2bfa4645e6a05879e663f2b72264dc150610210.jpeg",
-    rating: 4.5,
-    finishedDate: "2026-09-05",
   },
 ];
