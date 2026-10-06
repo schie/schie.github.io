@@ -16,18 +16,18 @@ export type FinishedHardcoverBook = HardcoverBook & {
 
 export const currentlyReading: HardcoverBook[] = [
   {
-    title: "We Are Legion",
-    slug: "we-are-legion",
-    author: "Dennis E. Taylor",
+    title: "Empire of the Dawn",
+    slug: "empire-of-the-dawn",
+    author: "Jay Kristoff",
     imageUrl:
-      "https://assets.hardcover.app/edition/31651212/0f91da1379dc803e1a880cc526c86661808a6680.jpeg",
+      "https://assets.hardcover.app/edition/32385941/2fa21afd-8e8a-42b4-a449-ee290b60d68e.png",
   },
   {
-    title: "Piranesi",
-    slug: "piranesi",
-    author: "Susanna Clarke",
+    title: "Katabasis",
+    slug: "katabasis-2025",
+    author: "R.F. Kuang",
     imageUrl:
-      "https://assets.hardcover.app/editions/30480426/ec301cb7-b118-48fd-aa3a-5d336e61c182.jpg",
+      "https://assets.hardcover.app/editions/31147378/6272729711218434.jpg",
   },
   {
     title: "The Wild Robot Escapes",
@@ -39,6 +39,24 @@ export const currentlyReading: HardcoverBook[] = [
 ];
 
 export const recentlyFinished: FinishedHardcoverBook[] = [
+  {
+    title: "Piranesi",
+    slug: "piranesi",
+    author: "Susanna Clarke",
+    imageUrl:
+      "https://assets.hardcover.app/editions/30480426/ec301cb7-b118-48fd-aa3a-5d336e61c182.jpg",
+    rating: 3,
+    finishedDate: "2026-10-04",
+  },
+  {
+    title: "We Are Legion",
+    slug: "we-are-legion",
+    author: "Dennis E. Taylor",
+    imageUrl:
+      "https://assets.hardcover.app/edition/31651212/0f91da1379dc803e1a880cc526c86661808a6680.jpeg",
+    rating: 3,
+    finishedDate: "2026-10-02",
+  },
   {
     title: "Empire of the Damned",
     slug: "empire-of-the-damned",
@@ -54,7 +72,7 @@ export const recentlyFinished: FinishedHardcoverBook[] = [
     author: "Brandon Sanderson",
     imageUrl:
       "https://assets.hardcover.app/edition/32409522/5562a0b7-5a80-4b2e-b8a2-cc8f4780b904.png",
-    rating: 3.5,
+    rating: 4,
     finishedDate: "2026-09-26",
   },
   {
@@ -74,23 +92,5 @@ export const recentlyFinished: FinishedHardcoverBook[] = [
       "https://assets.hardcover.app/editions/30548430/7973802927976714.jpg",
     rating: 4.5,
     finishedDate: "2026-09-16",
-  },
-  {
-    title: "Kings of the Wyld",
-    slug: "kings-of-the-wyld",
-    author: "Nicholas Eames",
-    imageUrl:
-      "https://assets.hardcover.app/edition/30447628/23d6f2bd-115d-450f-a731-9fbcb59b04e8.jpg",
-    rating: 3.5,
-    finishedDate: "2026-09-09",
-  },
-  {
-    title: "Warbreaker",
-    slug: "warbreaker",
-    author: "Brandon Sanderson",
-    imageUrl:
-      "https://assets.hardcover.app/edition/28188510/d2bfa4645e6a05879e663f2b72264dc150610210.jpeg",
-    rating: 4.5,
-    finishedDate: "2026-09-05",
   },
 ];
