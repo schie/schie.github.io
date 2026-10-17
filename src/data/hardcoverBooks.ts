@@ -16,13 +16,6 @@ export type FinishedHardcoverBook = HardcoverBook & {
 
 export const currentlyReading: HardcoverBook[] = [
   {
-    title: "He Who Fights with Monsters 13: A LitRPG Adventure",
-    slug: "he-who-fights-with-monsters-13",
-    author: "Shirtaloon, Travis Deverell",
-    imageUrl:
-      "https://assets.hardcover.app/edition/33018974/ee62a4cf-322a-47a1-a0c1-baa054415547.jpg",
-  },
-  {
     title: "Empire of the Dawn",
     slug: "empire-of-the-dawn",
     author: "Jay Kristoff",
@@ -39,6 +32,15 @@ export const currentlyReading: HardcoverBook[] = [
 ];
 
 export const recentlyFinished: FinishedHardcoverBook[] = [
+  {
+    title: "He Who Fights with Monsters 13: A LitRPG Adventure",
+    slug: "he-who-fights-with-monsters-13",
+    author: "Shirtaloon, Travis Deverell",
+    imageUrl:
+      "https://assets.hardcover.app/edition/33018974/ee62a4cf-322a-47a1-a0c1-baa054415547.jpg",
+    rating: 4,
+    finishedDate: "2026-10-16",
+  },
   {
     title: "Katabasis",
     slug: "katabasis-2025",
@@ -83,14 +85,5 @@ export const recentlyFinished: FinishedHardcoverBook[] = [
       "https://assets.hardcover.app/edition/32409522/5562a0b7-5a80-4b2e-b8a2-cc8f4780b904.png",
     rating: 4,
     finishedDate: "2026-09-26",
-  },
-  {
-    title: "The Lost Metal",
-    slug: "the-lost-metal",
-    author: "Brandon Sanderson",
-    imageUrl:
-      "https://assets.hardcover.app/external_data/60987563/93e411dc55a6e9763635437407af2309d749fc4a.jpeg",
-    rating: 4.5,
-    finishedDate: "2026-09-20",
   },
 ];
