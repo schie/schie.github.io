@@ -16,18 +16,18 @@ export type FinishedHardcoverBook = HardcoverBook & {
 
 export const currentlyReading: HardcoverBook[] = [
   {
-    title: "He Who Fights with Monsters 13: A LitRPG Adventure",
-    slug: "he-who-fights-with-monsters-13",
-    author: "Shirtaloon, Travis Deverell",
+    title: "Hollywood, Ending",
+    slug: "hollywood-ending-2026",
+    author: "John Green",
     imageUrl:
-      "https://assets.hardcover.app/edition/33018974/ee62a4cf-322a-47a1-a0c1-baa054415547.jpg",
+      "https://assets.hardcover.app/edition/33119104/9cc09f8024d21a65ab0d1964da1eb166d557e727.jpeg",
   },
   {
-    title: "Empire of the Dawn",
-    slug: "empire-of-the-dawn",
-    author: "Jay Kristoff",
+    title: "The Way of Kings",
+    slug: "the-way-of-kings",
+    author: "Brandon Sanderson",
     imageUrl:
-      "https://assets.hardcover.app/edition/32385941/2fa21afd-8e8a-42b4-a449-ee290b60d68e.png",
+      "https://assets.hardcover.app/edition/3134360/a18d937805a28e3214a556442c8d33f41c02f2cb.jpeg",
   },
   {
     title: "The Wild Robot Escapes",
@@ -39,6 +39,33 @@ export const currentlyReading: HardcoverBook[] = [
 ];
 
 export const recentlyFinished: FinishedHardcoverBook[] = [
+  {
+    title: "Empire of the Dawn",
+    slug: "empire-of-the-dawn",
+    author: "Jay Kristoff",
+    imageUrl:
+      "https://assets.hardcover.app/edition/32385941/2fa21afd-8e8a-42b4-a449-ee290b60d68e.png",
+    rating: 4.5,
+    finishedDate: "2026-10-20",
+  },
+  {
+    title: "Mestra",
+    slug: "mestra",
+    author: "Madeline Miller",
+    imageUrl:
+      "https://assets.hardcover.app/external_data/2662509/e9302f64570b19440a46ccfd1084ed963df09680.jpeg",
+    rating: 3.5,
+    finishedDate: "2026-10-17",
+  },
+  {
+    title: "He Who Fights with Monsters 13",
+    slug: "he-who-fights-with-monsters-13",
+    author: "Shirtaloon, Travis Deverell",
+    imageUrl:
+      "https://assets.hardcover.app/external_data/4441098/46d5e72f9a82b7f044252eab4c1dc96e6504728d.jpeg",
+    rating: 4,
+    finishedDate: "2026-10-16",
+  },
   {
     title: "Katabasis",
     slug: "katabasis-2025",
@@ -62,35 +89,8 @@ export const recentlyFinished: FinishedHardcoverBook[] = [
     slug: "we-are-legion",
     author: "Dennis E. Taylor",
     imageUrl:
-      "https://assets.hardcover.app/edition/31651212/0f91da1379dc803e1a880cc526c86661808a6680.jpeg",
+      "https://assets.hardcover.app/book_mappings/7332740/e4517fbd660c1dcb2cad6dd986899a433e1ab6ed.jpeg",
     rating: 3,
     finishedDate: "2026-10-02",
-  },
-  {
-    title: "Empire of the Damned",
-    slug: "empire-of-the-damned",
-    author: "Jay Kristoff, Bon Orthwick",
-    imageUrl:
-      "https://assets.hardcover.app/edition/30883078/8478f02bc95cd56438f20ef95050d0cec01d8cb1.jpeg",
-    rating: 5,
-    finishedDate: "2026-09-30",
-  },
-  {
-    title: "The Fires of December",
-    slug: "the-fires-of-december",
-    author: "Brandon Sanderson",
-    imageUrl:
-      "https://assets.hardcover.app/edition/32409522/5562a0b7-5a80-4b2e-b8a2-cc8f4780b904.png",
-    rating: 4,
-    finishedDate: "2026-09-26",
-  },
-  {
-    title: "The Lost Metal",
-    slug: "the-lost-metal",
-    author: "Brandon Sanderson",
-    imageUrl:
-      "https://assets.hardcover.app/external_data/60987563/93e411dc55a6e9763635437407af2309d749fc4a.jpeg",
-    rating: 4.5,
-    finishedDate: "2026-09-20",
   },
 ];
