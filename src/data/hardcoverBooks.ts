@@ -16,81 +16,74 @@ export type FinishedHardcoverBook = HardcoverBook & {
 
 export const currentlyReading: HardcoverBook[] = [
   {
-    title: "He Who Fights with Monsters 13: A LitRPG Adventure",
-    slug: "he-who-fights-with-monsters-13",
-    author: "Shirtaloon, Travis Deverell",
+    title: "Oathbringer",
+    slug: "oathbringer",
+    author: "Brandon Sanderson",
     imageUrl:
-      "https://assets.hardcover.app/edition/33018974/ee62a4cf-322a-47a1-a0c1-baa054415547.jpg",
+      "https://assets.hardcover.app/edition/30455612/1deeb21c2576843fe4556815fea2eb784e406908.jpeg",
   },
   {
-    title: "Empire of the Dawn",
-    slug: "empire-of-the-dawn",
-    author: "Jay Kristoff",
+    title: "Hollywood, Ending",
+    slug: "hollywood-ending-2026",
+    author: "John Green",
     imageUrl:
-      "https://assets.hardcover.app/edition/32385941/2fa21afd-8e8a-42b4-a449-ee290b60d68e.png",
+      "https://assets.hardcover.app/edition/33119104/9cc09f8024d21a65ab0d1964da1eb166d557e727.jpeg",
   },
   {
     title: "The Wild Robot Escapes",
     slug: "the-wild-robot-escapes",
     author: "Peter  Brown",
     imageUrl:
-      "https://assets.hardcover.app/external_data/35422191/0fa8d7ceb502714596fbe26e4d6ae98d314e01fb.jpeg",
+      "https://assets.hardcover.app/external_data/4493892/bfd744e05ce80215698c029a4314375ec119fc35.jpeg",
   },
 ];
 
 export const recentlyFinished: FinishedHardcoverBook[] = [
   {
-    title: "Katabasis",
-    slug: "katabasis-2025",
-    author: "R.F. Kuang",
+    title: "The Girl Who Looked Up",
+    slug: "the-girl-who-looked-up",
+    author: "Brandon Sanderson, Alexis Hernandez, Justin Hernandez",
     imageUrl:
-      "https://assets.hardcover.app/editions/31147378/6272729711218434.jpg",
-    rating: 3.5,
-    finishedDate: "2026-10-11",
+      "https://assets.hardcover.app/edition/33061056/75a1e5a5-1308-4846-9887-3b7426d9893d.jpg",
+    finishedDate: "2026-11-11",
   },
   {
-    title: "Piranesi",
-    slug: "piranesi",
-    author: "Susanna Clarke",
+    title: "The Dog and the Dragon",
+    slug: "the-dog-and-the-dragon",
+    author: "Brandon Sanderson, Howard Lyon",
     imageUrl:
-      "https://assets.hardcover.app/editions/30480426/ec301cb7-b118-48fd-aa3a-5d336e61c182.jpg",
-    rating: 3,
-    finishedDate: "2026-10-04",
+      "https://assets.hardcover.app/edition/33061053/bcfe38b1-de5d-4765-bafc-d4b8e2221b51.jpg",
+    finishedDate: "2026-11-11",
   },
   {
-    title: "We Are Legion",
-    slug: "we-are-legion",
-    author: "Dennis E. Taylor",
+    title: "The ChasmFriends Get A Pet",
+    slug: "the-chasmfriends-get-a-pet",
+    author: "Dan Wells, Anna Earley",
     imageUrl:
-      "https://assets.hardcover.app/edition/31651212/0f91da1379dc803e1a880cc526c86661808a6680.jpeg",
-    rating: 3,
-    finishedDate: "2026-10-02",
+      "https://assets.hardcover.app/edition/33365983/131a1acb-3a26-4bb2-a73f-b1a1e5dffe9c.jpg",
+    finishedDate: "2026-11-11",
   },
   {
-    title: "Empire of the Damned",
-    slug: "empire-of-the-damned",
-    author: "Jay Kristoff, Bon Orthwick",
+    title: "Edgedancer",
+    slug: "edgedancer",
+    author: "Brandon Sanderson, Ben McSweeney, Isaac Stewart",
     imageUrl:
-      "https://assets.hardcover.app/edition/30883078/8478f02bc95cd56438f20ef95050d0cec01d8cb1.jpeg",
-    rating: 5,
-    finishedDate: "2026-09-30",
+      "https://assets.hardcover.app/editions/31450038/7628632503626287.jpg",
+    finishedDate: "2026-11-11",
   },
   {
-    title: "The Fires of December",
-    slug: "the-fires-of-december",
+    title: "Wandersail",
+    slug: "wandersail",
+    author: "Brandon Sanderson, Steve Argyle",
+    imageUrl:
+      "https://assets.hardcover.app/edition/33374804/db10182d-c31a-431b-a363-88b8cea72d12.jpg",
+    finishedDate: "2026-11-11",
+  },
+  {
+    title: "Words of Radiance",
+    slug: "words-of-radiance",
     author: "Brandon Sanderson",
-    imageUrl:
-      "https://assets.hardcover.app/edition/32409522/5562a0b7-5a80-4b2e-b8a2-cc8f4780b904.png",
-    rating: 4,
-    finishedDate: "2026-09-26",
-  },
-  {
-    title: "The Lost Metal",
-    slug: "the-lost-metal",
-    author: "Brandon Sanderson",
-    imageUrl:
-      "https://assets.hardcover.app/external_data/60987563/93e411dc55a6e9763635437407af2309d749fc4a.jpeg",
-    rating: 4.5,
-    finishedDate: "2026-09-20",
+    imageUrl: "https://assets.hardcover.app/edition/419923/7428154-L.jpg",
+    finishedDate: "2026-11-10",
   },
 ];
