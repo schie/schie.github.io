@@ -14,13 +14,16 @@ export type FinishedHardcoverBook = HardcoverBook & {
   finishedDate?: string;
 };
 
-export const currentlyReading: HardcoverBook[] = [
+export const currentlyReading: HardcoverBook[] = [];
+
+export const recentlyFinished: FinishedHardcoverBook[] = [
   {
-    title: "Oathbringer",
-    slug: "oathbringer",
-    author: "Brandon Sanderson",
+    title: "The Wild Robot Escapes",
+    slug: "the-wild-robot-escapes",
+    author: "Peter  Brown",
     imageUrl:
-      "https://assets.hardcover.app/edition/30455612/1deeb21c2576843fe4556815fea2eb784e406908.jpeg",
+      "https://assets.hardcover.app/external_data/4493892/bfd744e05ce80215698c029a4314375ec119fc35.jpeg",
+    finishedDate: "2026-11-26",
   },
   {
     title: "Hollywood, Ending",
@@ -28,17 +31,24 @@ export const currentlyReading: HardcoverBook[] = [
     author: "John Green",
     imageUrl:
       "https://assets.hardcover.app/edition/33119104/9cc09f8024d21a65ab0d1964da1eb166d557e727.jpeg",
+    finishedDate: "2026-11-26",
   },
   {
-    title: "The Wild Robot Escapes",
-    slug: "the-wild-robot-escapes",
-    author: "Peter  Brown",
+    title: "Dawnshard",
+    slug: "dawnshard",
+    author: "Brandon Sanderson",
     imageUrl:
-      "https://assets.hardcover.app/external_data/4493892/bfd744e05ce80215698c029a4314375ec119fc35.jpeg",
+      "https://assets.hardcover.app/editions/30399386/5228262192790232.jpg",
+    finishedDate: "2026-11-26",
   },
-];
-
-export const recentlyFinished: FinishedHardcoverBook[] = [
+  {
+    title: "Oathbringer",
+    slug: "oathbringer",
+    author: "Brandon Sanderson",
+    imageUrl:
+      "https://assets.hardcover.app/edition/30455612/1deeb21c2576843fe4556815fea2eb784e406908.jpeg",
+    finishedDate: "2026-11-24",
+  },
   {
     title: "The Girl Who Looked Up",
     slug: "the-girl-who-looked-up",
@@ -48,42 +58,11 @@ export const recentlyFinished: FinishedHardcoverBook[] = [
     finishedDate: "2026-11-11",
   },
   {
-    title: "The Dog and the Dragon",
-    slug: "the-dog-and-the-dragon",
-    author: "Brandon Sanderson, Howard Lyon",
-    imageUrl:
-      "https://assets.hardcover.app/edition/33061053/bcfe38b1-de5d-4765-bafc-d4b8e2221b51.jpg",
-    finishedDate: "2026-11-11",
-  },
-  {
     title: "The ChasmFriends Get A Pet",
     slug: "the-chasmfriends-get-a-pet",
     author: "Dan Wells, Anna Earley",
     imageUrl:
       "https://assets.hardcover.app/edition/33365983/131a1acb-3a26-4bb2-a73f-b1a1e5dffe9c.jpg",
     finishedDate: "2026-11-11",
-  },
-  {
-    title: "Edgedancer",
-    slug: "edgedancer",
-    author: "Brandon Sanderson, Ben McSweeney, Isaac Stewart",
-    imageUrl:
-      "https://assets.hardcover.app/editions/31450038/7628632503626287.jpg",
-    finishedDate: "2026-11-11",
-  },
-  {
-    title: "Wandersail",
-    slug: "wandersail",
-    author: "Brandon Sanderson, Steve Argyle",
-    imageUrl:
-      "https://assets.hardcover.app/edition/33374804/db10182d-c31a-431b-a363-88b8cea72d12.jpg",
-    finishedDate: "2026-11-11",
-  },
-  {
-    title: "Words of Radiance",
-    slug: "words-of-radiance",
-    author: "Brandon Sanderson",
-    imageUrl: "https://assets.hardcover.app/edition/419923/7428154-L.jpg",
-    finishedDate: "2026-11-10",
   },
 ];
